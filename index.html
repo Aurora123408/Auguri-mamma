@@ -4,10 +4,44 @@
     <meta charset="UTF-8">
     <title>Auguri Mamma</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #ffe4e1; color: #333; text-align: center; padding: 50px; }
-        h1 { color: #d63384; }
-        .dedica, .poesia { margin-top: 30px; }
-        .poesia p { line-height: 1.6; }
+        /* Global styling */
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #ffe4e1 0%, #ffcad4 100%);
+            color: #333;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+        h1 {
+            color: #d63384;
+            font-size: 3em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        .dedica, .poesia {
+            margin-top: 30px;
+        }
+        .poesia p {
+            line-height: 1.6;
+        }
+        /* heart animation */
+        .heart {
+            display: inline-block;
+            animation: beat 1s infinite;
+        }
+        @keyframes beat {
+            0%,100% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+        }
     </style>
 </head>
 <body>
@@ -29,6 +63,17 @@
         Sei la mia mamma, il mio tutto,<br>
         il dono più grande che la vita potesse offrirmi.</p>
     </div>
-    <p style="margin-top:30px; font-style:italic;">Tanti auguri mamma da Aurora o Lolo</p>
+    <p style="margin-top:30px; font-style:italic;"><strong>Tanti auguri mamma da Aurora o Lolo <span class="heart">❤️</span></strong></p>
+    <style>
+        /* animazione cuore */
+        .heart {
+            display: inline-block;
+            animation: beat 1s infinite;
+        }
+        @keyframes beat {
+            0%,100% { transform: scale(1); }
+            50% { transform: scale(1.3); }
+        }
+    </style>
 </body>
 </html>
